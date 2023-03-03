@@ -1,3 +1,30 @@
+#header {
+  background-color:aqua
+}
+h1 {
+  text-align: center;
+  color:#4b4c4d;
+}
+p {
+  text-align: center;
+  color: #4b4c4d;
+  font-size: large;
+}
+.button {
+  background-color:#4b4c4d;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  color:beige;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  align-items: center;
+}
+/*Commentaire ci dessous footer*/
+
 .footer-basic {
     padding:40px 0;
     background-color:#ffffff;
