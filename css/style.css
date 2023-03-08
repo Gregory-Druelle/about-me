@@ -32,7 +32,27 @@ p {
 }
 /*section index*/
 
+.history {
+  max-width: 750px;
+  margin: auto;
+}
+
 /*section about-me*/
+
+.my-life {
+  max-width: 750Px;
+  margin: auto;
+}
+
+
+h1 {
+  background-color: blue;
+  color:gold;
+}
+p {
+  font-size: x-large; 
+  color: black;
+  }
 
 
 /*language table about-me*/
