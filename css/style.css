@@ -43,6 +43,8 @@ p {
 
 .container {
   display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 #my-passions {
   justify-content: space-around;
