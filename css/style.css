@@ -39,6 +39,20 @@ p {
 
 /*section about-me*/
 
+/*section my-passions*/
+
+.container {
+  display: flex;
+}
+#my-passions {
+  justify-content: space-around;
+}
+#my-passions2 {
+  justify-content: space-around;
+}
+
+/*??*/
+
 .my-life {
   max-width: 750Px;
   margin: auto;
