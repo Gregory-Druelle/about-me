@@ -14,7 +14,7 @@ p {
   color: #4b4c4d;
   font-size: large;
 }
-.contenair {
+.menu {
   display: flex;
   justify-content: center;
 }
@@ -32,6 +32,8 @@ p {
 }
 /*section index*/
 
+
+
 .history {
   max-width: 750px;
   margin: auto;
@@ -41,11 +43,25 @@ p {
 
 /*section my-passions*/
 
+.container div {
+  display: flex;
+  margin: auto;
+}
+
 .container {
   display: flex;
+  flex-direction: column;
   margin-left: 5%;
   margin-right: 5%;
 }
+
+@media all and (min-width: 600px) 
+{
+  .container{
+    flex-direction: row;
+  }
+}
+
 #my-passions {
   justify-content: space-around;
 }
@@ -116,3 +132,42 @@ p {
     color:#4b4c4d;
     margin-bottom:0;
   }
+
+  label, #toggle
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .menu 
+    {
+        display: none;
+        flex-direction: column;
+    }
+ 
+    nav .menu a {
+        width: 50%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .menu {
+        display: flex;
+    }
+}
