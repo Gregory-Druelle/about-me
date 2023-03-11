@@ -1,6 +1,6 @@
 /*header*/
 
-
+/* custom css */
 
 #header {
   background-color:aqua
@@ -11,8 +11,6 @@ h1 {
 }
 p {
   text-align: center;
-  color: #4b4c4d;
-  font-size: large;
 }
 .menu {
   display: flex;
@@ -30,6 +28,22 @@ p {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+/*section mode sombre*/
+
+
+body {
+  background-color: white;
+  color: black;
+  padding: 1em;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
+
+
+
 /*section index*/
 
 
@@ -37,6 +51,7 @@ p {
 .history {
   max-width: 750px;
   margin: auto;
+  color: white;
 }
 
 /*section about-me*/
@@ -55,7 +70,7 @@ p {
   margin-right: 5%;
 }
 
-@media all and (min-width: 600px) 
+@media all and (min-width: 992px) 
 {
   .container{
     flex-direction: row;
