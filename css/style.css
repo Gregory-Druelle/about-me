@@ -2,8 +2,46 @@
 
 /* custom css */
 
+/*section mode sombre*/
+
+:root {
+  --ecriture: #f1f1f1;
+  --background: #262626;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+h1 {
+  margin-top: 50px;
+  font-size: 80px;
+  color: var(--ecriture);
+
+}
+.changeTheme {
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  background: salmon;
+  color: var(--ecriture);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/*header*/
+
 #header {
-  background-color:aqua
+  background-color:rgb(57, 131, 160)
 }
 h1 {
   text-align: center;
@@ -11,6 +49,10 @@ h1 {
 }
 p {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 8%;
+  font-size: larger; 
+  color: black;
 }
 .menu {
   display: flex;
@@ -29,29 +71,13 @@ p {
   cursor: pointer;
 }
 
-/*section mode sombre*/
-
-
-body {
-  background-color: white;
-  color: black;
-  padding: 1em;
-}
-.dark {
-  background-color: black;
-  color: white;
-}
-
-
-
 /*section index*/
-
 
 
 .history {
   max-width: 750px;
   margin: auto;
-  color: white;
+  text-align: justify;
 }
 
 /*section about-me*/
@@ -96,10 +122,6 @@ h1 {
   background-color: blue;
   color:gold;
 }
-p {
-  font-size: x-large; 
-  color: black;
-  }
 
 
 /*language table about-me*/
@@ -118,7 +140,7 @@ p {
   }
   
   th {
-    background-color: rgb(235,235,235);
+    background-color: rgb(173, 165, 165);
   }
   
   td {
