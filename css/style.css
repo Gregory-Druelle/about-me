@@ -6,7 +6,7 @@
 
 :root {
   --ecriture: #f1f1f1;
-  --background: #262626;
+  --background: #383737;
 }
 
 body {
@@ -20,8 +20,8 @@ body {
   font-family: sans-serif;
 }
 h1 {
-  margin-top: 50px;
-  font-size: 80px;
+  margin-top: 10px;
+  font-size: 30px;
   color: var(--ecriture);
 
 }
@@ -41,16 +41,21 @@ h1 {
 /*header*/
 
 #header {
+  margin-top: 0%;
+  margin-bottom: 0%;
   background-color:rgb(57, 131, 160)
 }
 h1 {
   text-align: center;
   color:#4b4c4d;
 }
+
 p {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 8%;
+  margin: 5%;
+  margin-top: 0%;
+  margin-bottom: 5%;
   font-size: larger; 
   color: black;
 }
@@ -81,6 +86,11 @@ p {
 }
 
 /*section about-me*/
+
+.mylist {
+  text-align: left;
+  margin-left: 20%;
+}
 
 /*section my-passions*/
 
