@@ -12,6 +12,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: blue;
   background: var(--background);
   display: flex;
   justify-content: center;
@@ -57,7 +58,7 @@ p {
   margin-top: 0%;
   margin-bottom: 5%;
   font-size: larger; 
-  color: black;
+  color: blue;
 }
 .menu {
   display: flex;
@@ -77,6 +78,10 @@ p {
 }
 
 /*section index*/
+
+.accroche {
+  background-color: gold;
+}
 
 
 .history {
@@ -210,11 +215,14 @@ h1 {
         align-items: center;
         margin: 0 auto;
         font-size: 40px;
-        color: white;
+        color: rgb(83, 154, 187);
         cursor: pointer;
     }
  
     #toggle:checked + .menu {
         display: flex;
+        text-align: left;
+        position:relative;
+        z-index: 10;
     }
 }

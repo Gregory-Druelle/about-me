@@ -8,53 +8,34 @@
     <title>accueil</title>
 </head>
 <body>
+    <div class="changeTheme">Switch le Theme</div>
 <header id="header">
     <h1>Mon objectif. Devenir Web Développeur.</h1>
         <div style="text-align: center;">
             <img src="image/logo.png" alt="Web-E-com">
         </div>
-            <p>Quoi de plus motivant lorsqu'on arrive à joindre la passion à un projet professionnel ?</p>
-            <nav>
-                <label for="toggle">☰</label>
-                <input type="checkbox" id="toggle">
-                <div class="menu"> 
-                    <a href="index.html" class="button">accueil</a>
-                    <a href="about-me.html" class="button">à propos de moi</a>
-                    <a href="my-dreams.html" class="button">mes rêves d'apprenant</a>
-                    <a href="my-passions.html" class="button">mes passions</a>
-                    <a href="cv-fr.pdf" class="button" target="_blank">mon cv</a>
-                </div>
-            </nav>
+            <p class="accroche">
+                Quoi de plus motivant lorsqu'on arrive à joindre la passion à un projet professionnel ?
+            </p>
+            
 </header>
 
-        <div class="changeTheme">Switch le Theme</div>
+    <nav>
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle">
+        <div class="menu"> 
+            <a href="index.html" class="button">accueil</a>
+            <a href="about-me.html" class="button">à propos de moi</a>
+            <a href="my-dreams.html" class="button">mes rêves d'apprenant</a>
+            <a href="my-passions.html" class="button">mes passions</a>
+            <a href="cv-fr.pdf" class="button" target="_blank">mon cv</a>
+        </div>
+    </nav>
+
+        
 
 
-        <script>
-
-            const switchThemeBtn = document.querySelector('.changeTheme')
-            let toggleTheme = 0;
-
-
-        switchThemeBtn.addEventListener('click', () => {
-
-            if(toggleTheme === 0) {
-
-                document.documentElement.style.setProperty('--ecriture', '#262626');
-                document.documentElement.style.setProperty('--background', '#f1f1f1');
-                toggleTheme++;
-
-            } else {
-
-                document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
-                document.documentElement.style.setProperty('--background', '#262626');
-                toggleTheme--;
-
-            }
-            })
-
-
-        </script>
+        
 
     <h1>A propos de moi</h1>
 
@@ -135,5 +116,31 @@
         <p class="copyright">Web e-com © 2023</p>
     </footer>
     </div>
+
+            <script>
+
+                const switchThemeBtn = document.querySelector('.changeTheme')
+                let toggleTheme = 0;
+
+
+            switchThemeBtn.addEventListener('click', () => {
+
+                if(toggleTheme === 0) {
+
+                    document.documentElement.style.setProperty('--ecriture', '#262626');
+                    document.documentElement.style.setProperty('--background', '#f1f1f1');
+                    toggleTheme++;
+
+                } else {
+
+                    document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
+                    document.documentElement.style.setProperty('--background', '#262626');
+                    toggleTheme--;
+
+                }
+                })
+
+
+            </script>
 </body>
 </html>
